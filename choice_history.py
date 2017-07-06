@@ -294,8 +294,9 @@ class ChoiceDistribution(object):
         s += str(self.skew['IC'])
         s += "\n"
 
-        f.write(s)
-        f.flush()
+        if ((f is None) == False):
+            f.write(s)
+            f.flush()
 
         if(stdout):
             print(s)

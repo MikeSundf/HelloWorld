@@ -54,8 +54,8 @@ def icm_behavior_learning(user_id):
         os.mkdir(output_dir)
 
     file_name = output_dir + "/log.txt"
-    f_log = open(file_name, 'w')
-
+    #f_log = open(file_name, 'w')
+    f_log = None
     est_params_history = []
     min_product_dist_distance_user = []
 
@@ -250,7 +250,7 @@ def icm_behavior_learning(user_id):
 
         ############################################################################
 
-    f_log.close()
+    #f_log.close()
 
     print("finished!")
 
